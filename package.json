@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open --content-base C:/Users/Admin/Documents/webpackSetup/src/"
   },
   "author": "Krzysztof Kamieniecki",
   "license": "ISC",

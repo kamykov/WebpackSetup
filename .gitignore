@@ -3,6 +3,7 @@
 *.swp
 /npm-debug.log
 /build
+/dist
 *.iml
 yarn.lock
 package-lock.json
