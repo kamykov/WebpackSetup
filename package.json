@@ -1,0 +1,17 @@
+{
+  "name": "webpacksetup",
+  "version": "1.0.0",
+  "description": "Webpack Setup & Plugins ",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "start": "webpack-dev-server --open"
+  },
+  "author": "Krzysztof Kamieniecki",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
