@@ -37,3 +37,35 @@ npm install webpack webpack-cli webpack-dev-server
 npm start
 npm run webpack
 ```
+
+## 3. webpack configuration
+
+### commands:
+
+```
+touch webpack.config.js
+```
+
+### configuration file
+
+```
+const path = require("path");
+
+module.exports = {
+  entry: "./src/index.js",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "main.bundle.js",
+  },
+  mode: process.env.NODE_ENV || "development",
+  resolve: {
+    extensions: ['.js', '.jsx'],
+    modules: ['node_modules'],
+  },
+  devServer: {
+    contentBase: path.join(__dirname, "src"),
+    hot: true,
+  }
+};
+```
+[pushstate-webpack-dev-server](https://jaketrent.com/post/pushstate-webpack-dev-server/)
