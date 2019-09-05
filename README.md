@@ -68,4 +68,22 @@ module.exports = {
   }
 };
 ```
+
 [pushstate-webpack-dev-server](https://jaketrent.com/post/pushstate-webpack-dev-server/)
+
+## 4. React, babel instalation
+
+### commands:
+
+```
+npm install react react-dom
+npm install @babel/core babel-loader @babel/preset-env @babel/preset-react
+```
+
+in `.babelrc`
+
+```
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+```
