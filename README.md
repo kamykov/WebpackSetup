@@ -88,13 +88,30 @@ in `.babelrc`
 }
 ```
 
+in `webpack.config`
+
+```
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"]
+      }
+    ]
+  },
+```
+
 ## 5. SASS loaders
 
-### comands: 
+### comands:
+
 ```
 npm i node-sass sass-loader style-loader css-loader
 ```
-in `webpack.config` 
+
+in `webpack.config`
+
 ```
   module: {
     rules: [
@@ -105,4 +122,24 @@ in `webpack.config`
       }
     ]
   }
+```
+
+## 6. HtmlWebpackPlugin
+
+### comands:
+
+```
+npm install html-webpack-plugin
+```
+
+[HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/)
+in `webpack.config`
+
+```
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src', 'index.ejs'),
+      title: package.title,
+    })
+  ]
 ```

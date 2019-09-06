@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import './scss/App.scss'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './scss/App.scss';
 
-console.log("Webpack setup ====>");
+console.log('Webpack setup ====>');
 
 function App() {
   return (
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById('app'));
