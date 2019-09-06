@@ -87,3 +87,22 @@ in `.babelrc`
   "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
 ```
+
+## 5. SASS loaders
+
+### comands: 
+```
+npm i node-sass sass-loader style-loader css-loader
+```
+in `webpack.config` 
+```
+  module: {
+    rules: [
+      // ... some rules
+      {
+        test: /\.(scss|sass)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
+    ]
+  }
+```
